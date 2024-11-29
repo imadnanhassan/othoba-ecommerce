@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-primaryColor py-[15px] rounded-[50px] text-white font-[600] mt-[30px];
+  }
+  .heading {
+    @apply text-[44px] leading-[54px] font-[700] text-headingColor;
+  }
+  .text-para {
+    @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
+  }
+  .form-label {
+    @apply text-textColor font-semibold text-[16px] leading-7 mb-2;
+  }
+  .form-input {
+    @apply w-full px-4 py-3 border border-[#0066ff61] focus:outline-none focus:border-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer rounded-md;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    @apply w-full;
+  }
+  section {
+    @apply py-[35px];
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heading {
+    @apply text-[26px] leading-[36px];
+  }
+  .text-para {
+    @apply text-[16px] leading-7 mt-3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navagation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+  }
+  .menu {
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .show-menu {
+    display: block;
+  }
+}
+
+/* Add custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 30px !important;
+  width: 40px !important;
+}
+
+/* .swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #181a1c !important;
+  opacity: 100% !important;
+  background-color: #fff !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #0067ff !important;
+  border: none !important;
+}
+.swiper {
+  padding-bottom: 70px !important;
+}
+.swiper-slide.swiper-slide-next {
+  background-color: #0067ff !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 20px 78px rgba(0, 103, 255, 0.3);
+}
+.swiper-slide.swiper-slide-next h4 {
+  color: #fff;
+}
+.swiper-slide.swiper-slide-next p {
+  color: #fff;
+} */
+
+/* Gradient border effect */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px; /* Adjust thickness */
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #9559F7, #292933, #9559F7);
+  z-index: -1;
+}
+
+
+/* Base gradient hover effect */
+.gradient-hover {
+  background: radial-gradient(circle, #9559F7, #292933);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient hover effect with a pseudo-element */
+.gradient-hover:hover {
+  background: radial-gradient(circle, #9559F7, #4A4A57);
+  box-shadow: 0 0 10px rgba(149, 89, 247, 0.5);
+}
+
+.gradient-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #9559F7, #292933, #9559F7);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+/* Expand gradient border on hover */
+.gradient-hover:hover::before {
+  transform: scale(1.1);
+}
+
+.ql-editor {
+  min-height: 200px;
+  font-size: 16px;
+  line-height: 1.5;
+  /* color: #333; */
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
