@@ -71,8 +71,8 @@ export const AdminMenu = () => {
               to="/admin/product/categorys"
               label="Product Category"
             />
-            <AdminMenuLink to="/dashboard/brand" label="Product Brand" />
-            <AdminMenuLink to="/dashboard/brand" label="Product Attribute" />
+            <AdminMenuLink to="/admin/product/brand-list" label="Product Brand" />
+            <AdminMenuLink to="/admin/brand" label="Product Attribute" />
           </ul>
         )}
       </li>

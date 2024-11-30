@@ -56,11 +56,17 @@ export interface AdminProduct {
   status: string;
 }
 
-
 export interface AdminCategory {
   id: string;
   name: string;
   image: string;
   category: string;
   status: string;
+}
+
+export interface AdminBrand {
+  id: string;
+  name: string;
+  logo: string;
+  status: "active" | "inactive";
 }

@@ -1,5 +1,11 @@
 import images from "../assets/images/images";
-import { AdminCategory, AdminProduct, CategoryFilterItem, CategoryItems } from "../types";
+import {
+  AdminBrand,
+  AdminCategory,
+  AdminProduct,
+  CategoryFilterItem,
+  CategoryItems,
+} from "../types";
 
 export const categoriesData = [
   { id: 1, name: "Pharmacy", image: images.pharmacy },
@@ -1007,7 +1013,6 @@ export const products = [
   },
 ];
 
-
 export const adminProduct: AdminProduct[] = [
   {
     id: "#P1001",
@@ -1214,3 +1219,74 @@ export const adminCategory: AdminCategory[] = [
   },
 ];
 
+export const adminbrands: AdminBrand[] = [
+  {
+    id: "#B001",
+    name: "Apple",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B002",
+    name: "Samsung",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B003",
+    name: "Nike",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B004",
+    name: "Adidas",
+    logo: images.product6,
+    status: "active",
+  },
+  {
+    id: "#B005",
+    name: "Sony",
+    logo: images.product6,
+
+    status: "inactive",
+  },
+  {
+    id: "#B006",
+    name: "Coca-Cola",
+    logo: images.product6,
+
+    status: "inactive",
+  },
+  {
+    id: "#B007",
+    name: "Toyota",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B008",
+    name: "Gucci",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B009",
+    name: "Microsoft",
+    logo: images.product6,
+
+    status: "active",
+  },
+  {
+    id: "#B010",
+    name: "Tesla",
+    logo: images.product6,
+
+    status: "active",
+  },
+];
