@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AdminBreadcrumbs from "../../../components/common/AdminBreadcrumbs";
 import { TrashIcon } from "@radix-ui/react-icons";
 
-const ProductCategoryCreate = () => {
+const ProductCategoryCreate: React.FC = () => {
   const [categoryIcon, setCategoryIcon] = useState<File[]>([]);
   const [previewUrls, setPreviewUrls] = useState<string[]>([]);
   const [categoryBanner, setCategoryBanner] = useState<File[]>([]);
@@ -53,7 +53,7 @@ const ProductCategoryCreate = () => {
       <div className="px-6 rounded">
         <div className="bg-white dark:bg-[#1A1B1E] rounded">
           {/* Summary Section */}
-          <section id="summary" className="mb-8 mt-10 p-6">
+          <div id="summary" className="p-6">
             <div className="w-[80%] mx-auto">
               <div className="grid grid-cols-2 gap-8">
                 <div>
@@ -252,7 +252,7 @@ const ProductCategoryCreate = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </section>

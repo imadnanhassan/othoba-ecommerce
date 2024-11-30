@@ -55,3 +55,12 @@ export interface AdminProduct {
   reviews: number;
   status: string;
 }
+
+
+export interface AdminCategory {
+  id: string;
+  name: string;
+  image: string;
+  category: string;
+  status: string;
+}

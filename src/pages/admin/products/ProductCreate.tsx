@@ -21,7 +21,7 @@ interface Variant {
 }
 
 
-const ProductCreate = () => {
+const ProductCreate: React.FC = () => {
  const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
  const [previewUrls, setPreviewUrls] = useState<string[]>([]);
 

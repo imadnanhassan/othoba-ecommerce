@@ -12,6 +12,7 @@ import Dashboard from "../pages/admin/dashboard/Dashboard";
 import ProductsList from "../pages/admin/products/ProductsList";
 import ProductCreate from "../pages/admin/products/ProductCreate";
 import ProductCategoryCreate from "../pages/admin/products/ProductCategoryCreate";
+import ProductCategoryList from "../pages/admin/products/ProductCategoryList";
 
 const route = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const route = createBrowserRouter([
       {
         path: `${adminURL}/product/category-create`,
         element: <ProductCategoryCreate />,
+      },
+      {
+        path: `${adminURL}/product/categorys`,
+        element: <ProductCategoryList />,
       },
     ],
   },

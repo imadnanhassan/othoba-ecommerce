@@ -1,5 +1,5 @@
 import images from "../assets/images/images";
-import { AdminProduct, CategoryFilterItem, CategoryItems } from "../types";
+import { AdminCategory, AdminProduct, CategoryFilterItem, CategoryItems } from "../types";
 
 export const categoriesData = [
   { id: 1, name: "Pharmacy", image: images.pharmacy },
@@ -1140,3 +1140,77 @@ export const adminProduct: AdminProduct[] = [
     status: "publish",
   },
 ];
+
+export const adminCategory: AdminCategory[] = [
+  {
+    id: "#C001",
+    name: "Books",
+    image: images.product6,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C002",
+    name: "Electronics",
+    image: images.product7,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C003",
+    name: "Clothing",
+    image: images.product8,
+    category: "",
+    status: "draft",
+  },
+  {
+    id: "#C004",
+    name: "Home Decor",
+    image: images.product9,
+    category: "Furniture",
+    status: "publish",
+  },
+  {
+    id: "#C005",
+    name: "Beauty Products",
+    image: images.product10,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C006",
+    name: "Toys & Games",
+    image: images.product1,
+    category: "Kids",
+    status: "draft",
+  },
+  {
+    id: "#C007",
+    name: "Sports Equipment",
+    image: images.product2,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C008",
+    name: "Automobiles",
+    image: images.product3,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C009",
+    name: "Groceries",
+    image: images.product4,
+    category: "",
+    status: "publish",
+  },
+  {
+    id: "#C010",
+    name: "Furniture",
+    image: images.product5,
+    category: "Home Decor",
+    status: "draft",
+  },
+];
+

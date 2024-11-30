@@ -68,7 +68,7 @@ export const AdminMenu = () => {
             <AdminMenuLink to="/admin/product/list" label="Prodcut List" />
             <AdminMenuLink to="/admin/product/create" label="Prodcut Create" />
             <AdminMenuLink
-              to="/admin/product/category-create"
+              to="/admin/product/categorys"
               label="Product Category"
             />
             <AdminMenuLink to="/dashboard/brand" label="Product Brand" />
