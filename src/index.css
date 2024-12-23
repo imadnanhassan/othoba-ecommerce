@@ -64,6 +64,10 @@
   }
 }
 
+.active{
+  color: #0066ff;
+}
+
 /* Add custom scrollbar styles */
 .scrollbar-thin::-webkit-scrollbar {
   width: 6px;

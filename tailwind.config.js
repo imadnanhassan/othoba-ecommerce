@@ -28,6 +28,7 @@ export default {
         uxSecoundryBg2: "#292933",
         uxLightBgIcon: "#e5dbf7",
         uxLightTextIcon: "#9559F7",
+        activeColor: "#9559F7",
       },
       transitionProperty: {
         "max-height": "max-height",

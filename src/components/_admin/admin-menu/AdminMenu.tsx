@@ -285,7 +285,11 @@ const AdminMenuLink: React.FC<{ to: string; label: string }> = ({
   <li id="sidebar">
     <NavLink
       to={to}
-      className="relative flex flex-row items-center h-9 focus:outline-none text-uxSecoundryBg2 dark:text-uxSecoundryBg1 transition-all duration-300 pl-3 hover:pl-6"
+      className={({ isActive }) =>
+        isActive
+          ? "relative flex flex-row items-center h-9 focus:outline-none text-activeColor transition-all duration-300 pl-3 hover:pl-6"
+          : "relative flex flex-row items-center h-9 focus:outline-none text-uxSecoundryBg2 dark:text-uxSecoundryBg1 transition-all duration-300 pl-3 hover:pl-6"
+      }
     >
       <span className="inline-flex justify-center items-center ml-6">
         <ArrowRightIcon className="text-[10px]" />

@@ -14,6 +14,7 @@ import ProductCreate from "../pages/admin/products/ProductCreate";
 import ProductCategoryCreate from "../pages/admin/products/ProductCategoryCreate";
 import ProductCategoryList from "../pages/admin/products/ProductCategoryList";
 import ProductBrandList from "../pages/admin/products/ProductBrandList";
+import ProductCreateBrand from "../pages/admin/products/ProductCreateBrand";
 
 const route = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const route = createBrowserRouter([
       {
         path: `${adminURL}/product/brand-list`,
         element: <ProductBrandList />,
+      },
+      {
+        path: `${adminURL}/product/category-brand`,
+        element: <ProductCreateBrand />,
       },
     ],
   },

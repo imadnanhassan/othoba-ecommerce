@@ -17,7 +17,7 @@ const ProductBrandList: React.FC = () => {
       <div className="px-6 rounded">
         <div className="bg-white dark:bg-[#1A1B1E] rounded">
           <div className="flex justify-between items-center px-4">
-            <h1 className="text-lg font-bold">Category List</h1>
+            <h1 className="text-lg font-bold">Brand List</h1>
             <div className="flex justify-between items-center gap-3 p-4 mb-4">
               <div className="relative">
                 <input
