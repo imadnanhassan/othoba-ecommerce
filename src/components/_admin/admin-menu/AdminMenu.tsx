@@ -18,7 +18,7 @@ export const AdminMenu = () => {
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
 
   return (
-    <ul className="flex flex-col gap-2">
+    <ul className="flex flex-col gap-2 ">
       {/* Overview */}
       <li id="sidebar">
         <Link
@@ -110,7 +110,7 @@ export const AdminMenu = () => {
         </div>
         {isOrdersDropdownOpen && (
           <ul className="space-y-1 list-none ">
-            <AdminMenuLink to="/admin/post-list" label="Orders List" />
+            <AdminMenuLink to="/admin/order-list" label="Orders List" />
             <AdminMenuLink to="/admin/new-post" label="Orders Edit" />
             <AdminMenuLink to="/admin/category" label="Orders Details" />
           </ul>
@@ -287,7 +287,7 @@ const AdminMenuLink: React.FC<{ to: string; label: string }> = ({
       to={to}
       className={({ isActive }) =>
         isActive
-          ? "relative flex flex-row items-center h-9 focus:outline-none text-activeColor transition-all duration-300 pl-3 hover:pl-6"
+          ? "relative flex flex-row items-center h-9 focus:outline-none text-activeColor transition-all duration-300 pl-6 hover:pl-6"
           : "relative flex flex-row items-center h-9 focus:outline-none text-uxSecoundryBg2 dark:text-uxSecoundryBg1 transition-all duration-300 pl-3 hover:pl-6"
       }
     >

@@ -15,7 +15,7 @@ const AdminBreadcrumbs: React.FC<BreadcrumbProps> = ({
   iconTitle,
 }) => {
   return (
-    <div className="px-6 py-8">
+    <div className="px-6  py-8">
       <div className="flex justify-between items-center p-4 bg-gray-50 dark:bg-[#1A1B1E] rounded-md shadow-sm">
         {/* Left Side: Home Icon + Page Title */}
         <div className="flex items-center space-x-2">
