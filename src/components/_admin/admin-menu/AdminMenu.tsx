@@ -71,7 +71,10 @@ export const AdminMenu = () => {
               to="/admin/product/categorys"
               label="Product Category"
             />
-            <AdminMenuLink to="/admin/product/brand-list" label="Product Brand" />
+            <AdminMenuLink
+              to="/admin/product/brand-list"
+              label="Product Brand"
+            />
             <AdminMenuLink to="/admin/brand" label="Product Attribute" />
           </ul>
         )}
@@ -111,8 +114,8 @@ export const AdminMenu = () => {
         {isOrdersDropdownOpen && (
           <ul className="space-y-1 list-none ">
             <AdminMenuLink to="/admin/order-list" label="Orders List" />
-            <AdminMenuLink to="/admin/new-post" label="Orders Edit" />
-            <AdminMenuLink to="/admin/category" label="Orders Details" />
+            <AdminMenuLink to="/admin/order-edit/1" label="Orders Edit" />
+            <AdminMenuLink to="/admin/order-details" label="Orders Details" />
           </ul>
         )}
       </li>
